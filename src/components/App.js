@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-
 import About from "./About";
 import Home from "./Home";
 import Error from "./Error";
@@ -14,7 +12,7 @@ class App extends Component {
       <div id="main">
         {/* Do not remove the main div */}
         <Router>
-          <LocationDisplay />
+         
 
           <div>
             <nav>
@@ -27,6 +25,7 @@ class App extends Component {
                 </li>
               </ul>
             </nav>
+            <LocationDisplay />
             <Switch>
               <Route exact path="/">
                 <Home />
